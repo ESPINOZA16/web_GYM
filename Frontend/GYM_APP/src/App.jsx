@@ -11,6 +11,7 @@ import VistaEnConstruccion from "./Vistas/VistaEnConstruccion";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import VistaDashAdmin from "./Vistas/VistaDashAdmin"
+import RoutineForm from "./Componente/RoutineForm";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<HomeSite />} />
         <Route path="/login" element={<Login />} />
         <Route path="/FormRegUsuario" element={<FormRegUsuario />} />
+        <Route path="/FormRoutine" element={<RoutineForm />} />
 
         {/* ✅ RUTA PADRE CON RUTAS ANIDADAS */}
         <Route path="/SiteDinamic" element={<PrivateRoute><SiteDinamic /></PrivateRoute>}>
